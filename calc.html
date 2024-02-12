@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="../CSS/calculadora.css">
+
+    <script defer  src="../js/cal.js"></script>
+</head>
+<body>
+    <div class="calculadora-corpo">
+        <div class="top">
+            <div class="tela">
+                <h2 class="valor"></h2>
+            </div>
+            <button class="apagarevery" onclick="limpar()">C</button>
+        </div>
+        
+        <div class="box">   
+            <section class="number">
+                <div class="numero">
+                    <button type="button" class="trasbotao" id="sete" onclick="inserir(7)">7</button>
+                    <button type="button" class="trasbotao" id="oito" onclick="inserir(8)">8</button>
+                    <button type="button" class="trasbotao" id="nove" onclick="inserir(9)">9</button>
+                    <button type="button" class="trasbotao" id="quatro" onclick="inserir(4)">4</button>
+                    <button type="button" class="trasbotao" id="cinco" onclick="inserir(5)">5</button>
+                    <button type="button" class="trasbotao" id="seis" onclick="inserir(6)">6</button>
+                    <button type="button" class="trasbotao" id="um"  onclick="inserir(1)">1</button>
+                    <button type="button" class="trasbotao" id="dois" onclick="inserir(2)">2</button>
+                    <button type="button" class="trasbotao" id="tres" onclick="inserir(3)">3</button>
+                </div>
+                <div class="numero-baixo">
+                    <button type="button" class="cero" onclick="inserir(0)">0</button>
+                    <button type="button" class="ponto" onclick="inserir('.')">.</button>
+                </div>
+            </section>
+            <div class="caracters">
+
+                <button type="button" class="del" onclick="back()">Delete</button>
+
+                <div class="ferramentas">
+                    <div class="ferra1">
+                        <button type="button" class="btf" onclick="inserir('/')">/</button>
+                        <button type="button" class="btf" onclick="inserir('-')">-</button>
+                        <button type="button" class="btfultinmo" onclick="calcular()">=</button>
+                    </div>
+                    <div class="more">
+                      <button type="button" class="vezes" onclick="inserir('*')">*</button>
+                      <button type="button" class="mais" onclick="inserir('+')">+</button>
+                    </div>
+                </div>
+              
+            </div>    
+        </div>
+    </div>
+</body>
+</html>
